@@ -59,6 +59,15 @@ p {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+.portfolio-example-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
 
 .homepage-link {
   color: var(--primary-color);
@@ -68,10 +77,10 @@ p {
 
 .about-paragraphs {
   display: flex;
-  margin: 30px 100px;
+  margin: 30px 60px;
 }
 
-.email-link {
+.email-link, email-link:visited {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
@@ -88,9 +97,14 @@ p {
 }
 
 @media (max-width: 576px) {
-  img {display: none;}
-  h1 {20px;}
-  p {text-align: left; margin: none;}
+  h1 {font-size: 48px;}
+  h2 {text-align: center; font-size: 24px;}
+  p {text-align: center; margin: none;}
+  a {text-align: center;}
+  .homepage-image-preview {display: none;}
   .intro-sub-heading {display:none;}
+  .navigation-links {text-align:center;}
   .example-two-sub-heading {margin-top: 30px;}
+  .portfolio-example-link {display:block; margin: 0 20px;}
+  .email-link{font-size: 80%;}
 }
