@@ -31,6 +31,18 @@ p {
   line-height: 1.5;
 }
 
+footer{
+  margin: 20px;
+  font-family: monospace;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.source-code-link, source-code-link:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -95,6 +107,7 @@ p {
 .bg-image {
   background: var(--secondary-color);
 }
+
 
 @media (max-width: 576px) {
   h1 {font-size: 48px;}
