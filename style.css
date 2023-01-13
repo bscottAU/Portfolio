@@ -15,14 +15,14 @@ h3 {
 }
 
 h1 {
-  font-size: 96px !important;
+  font-size: 96px ;
 }
 h2 {
-  font-size: 48px !important;
+  font-size: 48px ;
 }
 
 h3 {
-  font-size: 24px !important;
+  font-size: 24px ;
   opacity: 0.7;
 }
 
@@ -85,4 +85,12 @@ p {
 
 .bg-image {
   background: var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+  img {display: none;}
+  h1 {20px;}
+  p {text-align: left; margin: none;}
+  .intro-sub-heading {display:none;}
+  .example-two-sub-heading {margin-top: 30px;}
 }
